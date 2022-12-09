@@ -1,0 +1,24 @@
+CREATE TABLE acme (id INTEGER PRIMARY KEY, item TEXT, year INTEGER, price INTEGER, state TEXT);
+INSERT INTO acme VALUES(1, 'chain', 1984, 20.00, "TX");
+INSERT INTO acme VALUES (2, "rope", 1990, 20.00,"TX");
+INSERT INTO acme VALUES(3, "bolts", 2000, 10.00, "OR");
+insert into ACME values (4, "NUTS",1999, 10.00, "CA");
+INSERT INTO acme VALUES (5, "washers", 1980, 2.00, 'VA');
+insert into acme VALUES (6,"cogs",
+1988,44.00,"WA");
+INSERT INTO acme VALUES  ( 7, "sprockets", 2022,44.00,"ID");
+INSERT INTO acme VALUES (8, "widgets",2020,20.00, "CA");
+INSERT INTO acme VALUES(9,"gidgets", 1977, 20.00, "wy");
+INSERT INTO acme VAlUES (10,"thingies", 1988, 20.00,"NV");
+INSERT INTO acme VALUES (11, "gizmos", 1976, 20.00,"UT");
+INSERT INTO acme VALUES(12,"buckets", 1984, 40.00, "CO");
+INSERT INTO acme VALUES (13, "pullys", 1997,50.00, "MT");
+INSERT INTO acme VALUES (14, "Pushys", 1995, 50.00, "WA");
+INSERT INTO acme VALUES (15, "gadgets", 1994, 44.00, "ID");
+
+
+
+
+
+SELECT * FROM acme WHERE year > 1997 ORDER BY year;
+SELECT * FROM acme WHERE price > 40.00 ORDER BY price;
